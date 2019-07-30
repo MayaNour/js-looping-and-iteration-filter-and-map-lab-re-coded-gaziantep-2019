@@ -24,3 +24,13 @@ function driversWithRevenueOver(drivers, revenueValue){
     
     return newDriversFilterList;
   }
+  
+  function exactMatchToList(drivers, driverObj){
+    const newDriversFilterList = drivers.filter(
+      function (driver) { return driver.name ===  driverObj.name || driver.revenue ===  driverObj.revenue; }
+    ).map(function(driver){
+      return driver.name;
+    });
+    
+    return newDriversFilterList;
+  }
