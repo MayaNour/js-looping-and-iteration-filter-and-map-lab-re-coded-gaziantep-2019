@@ -1,10 +1,10 @@
 // Code your solution here:
 function driversWithRevenueOver(drivers, revenueValue){
-  const newDriversFilterlistst = drivers.filter({
-    function (driver) { return driver.revenue > revenueValue; }
-  }).map(function(driver){
-    return driver.name;
-  });
-  
-  return newDriversFilterList;
-}
+    const newDriversFilterList = drivers.filter(
+      function (driver) { return driver.revenue > revenueValue; }
+    ).map(function(driver){
+      return driver.name;
+    });
+    
+    return newDriversFilterList;
+  }
