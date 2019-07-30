@@ -17,4 +17,10 @@ function driversWithRevenueOver(drivers, revenueValue){
     return newDriversFilterList;
   }
   
-  
+  function exactMatch(drivers, driverObj){
+    const newDriversFilterList = drivers.filter(
+      function (driver) { return driver.revenue > revenueValue; }
+    );
+    
+    return newDriversFilterList;
+  }
